@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+      *
+      {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+      body
+      {
+        background: #F7E5E4;
+      }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-left: 150px;
+            margin-top: 130px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.268);
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        #red > th
+        {
+          background: rgb(215, 50, 32);
+          color: white;
+          height: 4rem;
+        }
+        .a > td
+        {
+          height: 3rem;
+        }
+        .a >td:nth-child(1)
+        {
+          font-weight: 700;
+        }
+        #s
+        {
+          background: rgb(218, 218, 218);
+        }
+        #ss
+        {
+          background: #ffffff;
+          border: none;
+          font-weight: 700;
+          font-size: 1.2rem;
+          
+        }
+        h2
+        {
+          position: absolute;
+          top: 15%;
+          left: 45%;
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .b
+        {
+          background: #ffffff;
+        }
+        .sd
+        {
+          position: relative;
+          width:15rem;
+        }
+        .de
+        {
+          position: relative;
+          left: 48%;
+          width: 15rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Time Table</h2>
+    <img class="sd" src="./Screenshot 2023-12-10 191932.png" alt="">
+    <img class="de" src="./Screenshot 2023-12-10 191937.png" alt="">
+
+
+    <table>
+        <thead>
+            <tr id="red">
+                <th>Day/Period</th>
+                <th>9am - 10am</th>
+                <th>10am - 11am</th>
+                <th>11.15am - 12.15pm</th>
+                <th>12.15pm - 1.15pm</th>
+                <th>1.15pm - 2.00pm</th>
+                <th>2.00pm - 5.00pm</th>
+                <th>5.30pm - 6.30pm</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Subject 1 -->
+            <tr class="a  b">
+                <td>Monday</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td id="ss"></td>
+                <td>Subject</td>
+                <td>Subject</td>
+            </tr>
+            <!-- Subject 2 -->
+            <tr class="a" id="s">
+                <td>Tuesday</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td id="ss">L</td>
+                <td>Subject</td>
+                <td>Subject</td>
+            </tr>
+            <!-- Subject 3 -->
+            <tr class="a b">
+                <td>Wednesday</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td id="ss">U</td>
+                <td>Subject</td>
+                <td>Subject</td>
+            </tr>
+            <!-- Subject 4 -->
+            <tr class="a" id="s">
+                <td>Thursday</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td id="ss">N</td>
+                <td>Subject</td>
+                <td>Subject</td>
+            </tr>
+            <!-- Subject 5 -->
+            <tr class="a b">
+                <td>Friday</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td id="ss">C</td>
+                <td>Subject</td>
+                <td>Subject</td>
+            </tr>
+            <!-- Subject 6 -->
+            <tr class="a" id="s">
+                <td>Saturday</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td>Subject</td>
+                <td id="ss">H</td>
+                <td>Subject</td>
+                <td>Subject</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
